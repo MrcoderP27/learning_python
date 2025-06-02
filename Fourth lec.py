@@ -50,5 +50,18 @@ print(nested_dict)
 # SETS
 # Set is the collection of the unordered items .
 # Each element in a set is unique and immutable .
-collection = {1 , 2 , 3 ,"hello","world" , "world",1.5}
+collection = {1 , 2 , 3 ,"hello","world" , "world"}
 print(collection) # it is unordered and ignore duplicate values .
+print(type(collection))
+
+Empty = {} # this is empty dictionary not set . 
+Empty_set = set() # this is empty set . 
+print(type(Empty))
+print(type(Empty_set))
+
+# Set methods
+
+set1 = {2,4,6,8}
+
+collection.add("10,12,14") # adds the element to the set 
+print(set1)
