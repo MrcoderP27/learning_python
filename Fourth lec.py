@@ -108,3 +108,4 @@ mark.update({"chem" : int(input("Enter chem marks :"))})
 mark.update({"maths": int(input("Enter maths marks :"))})
 
 print(mark)
+
