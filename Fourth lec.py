@@ -61,13 +61,50 @@ print(type(Empty_set))
 
 # Set methods
 
-set1 = {2,4,6,8}
+set = {2,4,6,8}
 
-set1.add(10) # adds the element to the set 
-set1.add(12)
-set1.add(14)
-print(set1)
+set.add(10) # adds the element to the set 
+set.add(12)
+set.add(14)
+print(set)
 
-set1.remove(12) # removes the element from the set
-set1.remove(14)
-print(set1)
+set.remove(12) # removes the element from the set
+set.remove(14)
+print(set)
+
+set.pop() # removes random element from the set 
+print(set)
+
+set.clear() #clears the set
+print(set)
+
+set1 = {"ram", "shyam ", "ghanshyam" }
+set2 = {"ram" , "aman", "raman" ,"naman"}
+
+print(set1.union(set2)) # union of two sets
+print(set1.intersection(set2)) # intersecton of two 
+
+#Ques - Store the following word meanings in a python dictionary:
+word_meanings = {
+    "cat" : "a small animal" , 
+    "table" : ["a piece of furniture" , "list of facts and figures "]
+}
+print(word_meanings)
+
+"""Ques - You are give a list of subjects for students. Assume one classroom 
+is required for  1 subject . How many classrooms are needed by all students? 
+"python", "java", "c++", "python", "javascript", "java", "python", "java" ,"c++", "c" """
+
+classroom = {"python", "java", "c++", "python", "javascript", "java", "python", "java" ,"c++", "c"}
+print(classroom)
+print(len(classroom)) # length of set gives the number of unique 
+
+"""Ques - WAP to enter marks of 3 subbjects from the user and store them in a dictionary. Start with an empty 
+dictionary and add one by one . Use subject name as key and marks as value. """
+mark = {}
+
+mark.update({"phy" : int(input("Enter phy marks:"))})
+mark.update({"chem" : int(input("Enter chem marks :"))})
+mark.update({"maths": int(input("Enter maths marks :"))})
+
+print(mark)
