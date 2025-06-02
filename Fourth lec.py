@@ -63,5 +63,11 @@ print(type(Empty_set))
 
 set1 = {2,4,6,8}
 
-collection.add("10,12,14") # adds the element to the set 
+set1.add(10) # adds the element to the set 
+set1.add(12)
+set1.add(14)
+print(set1)
+
+set1.remove(12) # removes the element from the set
+set1.remove(14)
 print(set1)
