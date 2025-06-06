@@ -106,6 +106,19 @@ mark = {}
 mark.update({"phy" : int(input("Enter phy marks:"))})
 mark.update({"chem" : int(input("Enter chem marks :"))})
 mark.update({"maths": int(input("Enter maths marks :"))})
+mark.update({"english" : int(input("Enter english marks :"))})
+mark.update({"hindi" : int(input("Enter hindi marks :"))})
 
 print(mark)
+percentage = (mark["phy"] + mark["chem"] + mark["maths"] + mark["english"] + mark["hindi"]) / 5
 
+if percentage >= 90 : 
+    print("Excellent , Your percentage is : ",percentage)
+elif percentage >=60 and percentage < 90 : 
+    print("Great , Your percentage is : ",percentage)  
+elif percentage >= 33 and percentage < 60 :
+    print("Good but could have done it better , Your percentage is : ",percentage)
+elif percentage >=0 and percentage < 33 :
+    print("you need to work harder , Your percentage is : ",percentage)
+else:
+    print("Are you sure your inputs are correct ? , check and try again later.")
