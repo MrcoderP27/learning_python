@@ -16,14 +16,14 @@ while True:
             num3 = num1 * num2 
       elif sign=="÷" or sign=="/": 
        if num2==0:
-           print("Error")
+           print("🚫Error")
        else:
            num3 = num1 / num2
       else: 
-          print("Error , Invalid sign")
+          print("🚫Error , Invalid sign")
           num3 = None
   except ValueError :
-      print("Error , Invalid input")
+      print("🚫Error , Invalid input")
   if num3 is not None:   
       print(f"final answer is:{num3}\n")
   result_str = f"{num1}{sign}{num2}={num3}" 
@@ -36,3 +36,4 @@ while True:
   elif user.upper()=="Q":
       print("thank you for using the calculator")
       break
+  
